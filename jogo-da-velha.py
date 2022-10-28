@@ -51,26 +51,10 @@ def press(i, j):
 
 
 #renderizando botões
-buttons[0][0] = [0, button(0,0)]
-buttons[0][0][1].place(x=0,y=0)
-buttons[0][1] = [0, button(0,1)]
-buttons[0][1][1].place(x=50,y=0)
-buttons[0][2] = [0, button(0,2)]
-buttons[0][2][1].place(x=100,y=0)
-
-buttons[1][0] = [0, button(1,0)]
-buttons[1][0][1].place(x=0,y=50)
-buttons[1][1] = [0, button(1,1)]
-buttons[1][1][1].place(x=50,y=50)
-buttons[1][2] = [0, button(1,2)]
-buttons[1][2][1].place(x=100,y=50)
-
-buttons[2][0] = [0, button(2,0)]
-buttons[2][0][1].place(x=0,y=100)
-buttons[2][1] = [0, button(2,1)]
-buttons[2][1][1].place(x=50,y=100)
-buttons[2][2] = [0, button(2,2)]
-buttons[2][2][1].place(x=100,y=100)
+for i in range(3):
+    for j in range(3):
+        buttons[i][j] = [0, button(eval("i"),eval("j"))]
+        buttons[i][j][1].place(x=i*50,y=j*50)
 
 
 # iniciando looping
