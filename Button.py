@@ -18,7 +18,6 @@ class Button:
         self._.place(x=x*50, y=y*50)
 
 
-
     def pressed(self, grid):
         if (self.value) or (grid.win): return
 
@@ -42,6 +41,6 @@ class Button:
 
         grid.check()
     
-
+    
     def green(self):
         self._.config(bg="green2")
